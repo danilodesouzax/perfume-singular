@@ -1,0 +1,44 @@
+{
+  "loja": {
+    "nome": "Perfume Singular",
+    "slogan": "Sua fragrância, sua identidade",
+    "descricao": "Seleção curada de perfumes importados e nacionais. Encontre a fragrância ideal para cada momento na Perfume Singular.",
+    "logo": "images/logo.svg"
+  },
+  "contato": {
+    "whatsapp": "5511999999999",
+    "whatsappMensagem": "Olá! Vi o catálogo e gostaria de saber mais sobre:",
+    "telefone": "(11) 99999-9999",
+    "email": "contato@perfumesingular.com.br",
+    "endereco": "São Paulo, SP — Atendimento online",
+    "horario": "Seg a Sáb, 9h às 18h"
+  },
+  "redes": {
+    "instagram": "https://instagram.com/seu_perfil",
+    "facebook": "",
+    "tiktok": ""
+  },
+  "promocoes": [
+    {
+      "id": "promo-1",
+      "titulo": "Kit Descoberta",
+      "descricao": "Leve 3 amostras por R$ 49,90 e ganhe 10% off na primeira compra.",
+      "badge": "Novidade",
+      "ativo": true
+    },
+    {
+      "id": "promo-2",
+      "titulo": "Frete grátis",
+      "descricao": "Em compras acima de R$ 199 para região Sudeste.",
+      "badge": "Promoção",
+      "ativo": true
+    }
+  ],
+  "categorias": [
+    { "id": "todos", "nome": "Todos" },
+    { "id": "feminino", "nome": "Feminino" },
+    { "id": "masculino", "nome": "Masculino" },
+    { "id": "unissex", "nome": "Unissex" },
+    { "id": "kits", "nome": "Kits & Combos" }
+  ]
+}
