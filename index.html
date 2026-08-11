@@ -1,175 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Catálogo de perfumes — fragrâncias selecionadas para você.">
-  <title>Perfume Singular — Catálogo de Perfumes</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Essência — Catálogo de Perfumaria</title>
+<meta name="description" content="Catálogo de perfumes: coleções, notas olfativas, promoções e contato.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="header" id="topo">
-    <div class="container header__inner">
-      <a href="#topo" class="logo">
-        <img src="images/logo.svg" alt="" class="logo__icon" width="36" height="36">
-        <span class="logo__text" data-config="loja.nome">Perfume Singular</span>
-      </a>
-      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="nav" aria-label="Principal">
-        <a href="#catalogo" class="nav__link">Catálogo</a>
-        <a href="#promocoes" class="nav__link">Promoções</a>
-        <a href="#sobre" class="nav__link">Sobre</a>
-        <a href="#contato" class="nav__link">Contato</a>
-        <a href="#" class="nav__link nav__link--instagram" data-social="instagram" target="_blank" rel="noopener">Instagram</a>
-      </nav>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" id="topo">
+  <div class="header-inner">
+    <a href="#topo" class="logo">Essência<span class="logo-dot">.</span></a>
+
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#promocoes">Promoções</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a class="header-social" href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2c-2.72 0-3.06.01-4.12.06-1.06.05-1.79.22-2.43.47-.66.26-1.22.6-1.77 1.16-.56.55-.9 1.11-1.16 1.77-.25.64-.42 1.37-.47 2.43C2.01 8.94 2 9.28 2 12s.01 3.06.06 4.12c.05 1.06.22 1.79.47 2.43.26.66.6 1.22 1.16 1.77.55.56 1.11.9 1.77 1.16.64.25 1.37.42 2.43.47C8.94 21.99 9.28 22 12 22s3.06-.01 4.12-.06c1.06-.05 1.79-.22 2.43-.47.66-.26 1.22-.6 1.77-1.16.56-.55.9-1.11 1.16-1.77.25-.64.42-1.37.47-2.43.05-1.06.06-1.4.06-4.12s-.01-3.06-.06-4.12c-.05-1.06-.22-1.79-.47-2.43-.26-.66-.6-1.22-1.16-1.77-.55-.56-1.11-.9-1.77-1.16-.64-.25-1.37-.42-2.43-.47C15.06 2.01 14.72 2 12 2zm0 1.8c2.67 0 2.99.01 4.04.06.98.04 1.51.21 1.86.34.47.18.8.4 1.15.75.35.35.57.68.75 1.15.13.35.3.88.34 1.86.05 1.05.06 1.37.06 4.04s-.01 2.99-.06 4.04c-.04.98-.21 1.51-.34 1.86-.18.47-.4.8-.75 1.15-.35.35-.68.57-1.15.75-.35.13-.88.3-1.86.34-1.05.05-1.37.06-4.04.06s-2.99-.01-4.04-.06c-.98-.04-1.51-.21-1.86-.34-.47-.18-.8-.4-1.15-.75-.35-.35-.57-.68-.75-1.15-.13-.35-.3-.88-.34-1.86C3.81 14.99 3.8 14.67 3.8 12s.01-2.99.06-4.04c.04-.98.21-1.51.34-1.86.18-.47.4-.8.75-1.15.35-.35.68-.57 1.15-.75.35-.13.88-.3 1.86-.34C9.01 3.81 9.33 3.8 12 3.8zm0 3.05a5.15 5.15 0 1 0 0 10.3 5.15 5.15 0 0 0 0-10.3zm0 8.5a3.35 3.35 0 1 1 0-6.7 3.35 3.35 0 0 1 0 6.7zm5.36-8.7a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/></svg>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="hero-bottle" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="eyebrow">Perfumaria autoral</p>
+    <h1>Um frasco guarda<br><em>uma memória inteira.</em></h1>
+    <p class="hero-lede">Fragrâncias selecionadas por família olfativa — do primeiro traço cítrico ao fundo que fica na pele até o fim do dia.</p>
+    <a href="#catalogo" class="btn btn-primary">Explorar coleção</a>
+  </div>
+</section>
+
+<!-- ===================== PROMOÇÕES ===================== -->
+<section class="promos" id="promocoes">
+  <div class="section-head">
+    <p class="eyebrow">Por tempo limitado</p>
+    <h2>Promoções</h2>
+  </div>
+  <div class="promo-track" id="promoTrack">
+    <!-- preenchido via JS -->
+  </div>
+</section>
+
+<!-- ===================== CATÁLOGO ===================== -->
+<section class="catalogo" id="catalogo">
+  <div class="section-head">
+    <p class="eyebrow">A coleção</p>
+    <h2>Catálogo</h2>
+  </div>
+
+  <div class="filters" id="filters" role="tablist" aria-label="Filtrar por família olfativa">
+    <!-- preenchido via JS -->
+  </div>
+
+  <div class="product-grid" id="productGrid">
+    <!-- preenchido via JS -->
+  </div>
+</section>
+
+<!-- ===================== SOBRE ===================== -->
+<section class="sobre" id="sobre">
+  <div class="sobre-inner">
+    <p class="eyebrow">A casa</p>
+    <h2>Perfume é a parte da roupa que ninguém vê, mas todo mundo sente.</h2>
+    <p>Trabalhamos com uma curadoria enxuta: cada fragrância entra no catálogo porque tem uma pirâmide olfativa bem construída, não porque cabia na prateleira. Isso é o que você recebe aqui — poucas escolhas, todas certas.</p>
+  </div>
+</section>
+
+<!-- ===================== CONTATO / FOOTER ===================== -->
+<footer class="site-footer" id="contato">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#topo" class="logo">Essência<span class="logo-dot">.</span></a>
+      <p>Perfumaria por catálogo — peças à pronta-entrega e sob encomenda.</p>
     </div>
-  </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero__bg"></div>
-    <div class="container hero__content">
-      <p class="hero__eyebrow">Catálogo exclusivo</p>
-      <h1 class="hero__title" data-config="loja.nome">Perfume Singular</h1>
-      <p class="hero__subtitle" data-config="loja.slogan">Sua fragrância, sua identidade</p>
-      <p class="hero__desc" data-config="loja.descricao"></p>
-      <div class="hero__actions">
-        <a href="#catalogo" class="btn btn--primary">Ver catálogo</a>
-        <a href="#" class="btn btn--outline btn-whatsapp" data-action="whatsapp-geral">Falar no WhatsApp</a>
-      </div>
+    <div class="footer-col">
+      <h3>Fale com a gente</h3>
+      <ul class="footer-links">
+        <li>
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.03c-.24.68-1.4 1.31-1.94 1.39-.5.08-1.11.11-1.79-.11a17.5 17.5 0 0 1-1.63-.6c-2.87-1.24-4.74-4.14-4.88-4.33-.14-.19-1.17-1.55-1.17-2.96s.72-2.1.98-2.38c.25-.28.55-.35.74-.35h.53c.17 0 .4-.03.62.48.24.55.8 1.9.87 2.04.07.14.12.3.02.49-.09.19-.14.3-.28.46-.14.16-.29.36-.42.48-.14.13-.28.27-.12.53.16.27.72 1.19 1.55 1.93 1.06.95 1.96 1.24 2.23 1.38.27.14.43.12.59-.07.16-.2.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.86.26.13.44.2.5.31.06.11.06.62-.18 1.3z"/></svg>
+            WhatsApp
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2c-2.72 0-3.06.01-4.12.06-1.06.05-1.79.22-2.43.47-.66.26-1.22.6-1.77 1.16-.56.55-.9 1.11-1.16 1.77-.25.64-.42 1.37-.47 2.43C2.01 8.94 2 9.28 2 12s.01 3.06.06 4.12c.05 1.06.22 1.79.47 2.43.26.66.6 1.22 1.16 1.77.55.56 1.11.9 1.77 1.16.64.25 1.37.42 2.43.47C8.94 21.99 9.28 22 12 22s3.06-.01 4.12-.06c1.06-.05 1.79-.22 2.43-.47.66-.26 1.22-.6 1.77-1.16.56-.55.9-1.11 1.16-1.77.25-.64.42-1.37.47-2.43.05-1.06.06-1.4.06-4.12s-.01-3.06-.06-4.12c-.05-1.06-.22-1.79-.47-2.43-.26-.66-.6-1.22-1.16-1.77-.55-.56-1.11-.9-1.77-1.16-.64-.25-1.37-.42-2.43-.47C15.06 2.01 14.72 2 12 2zm0 1.8c2.67 0 2.99.01 4.04.06.98.04 1.51.21 1.86.34.47.18.8.4 1.15.75.35.35.57.68.75 1.15.13.35.3.88.34 1.86.05 1.05.06 1.37.06 4.04s-.01 2.99-.06 4.04c-.04.98-.21 1.51-.34 1.86-.18.47-.4.8-.75 1.15-.35.35-.68.57-1.15.75-.35.13-.88.3-1.86.34-1.05.05-1.37.06-4.04.06s-2.99-.01-4.04-.06c-.98-.04-1.51-.21-1.86-.34-.47-.18-.8-.4-1.15-.75-.35-.35-.57-.68-.75-1.15-.13-.35-.3-.88-.34-1.86C3.81 14.99 3.8 14.67 3.8 12s.01-2.99.06-4.04c.04-.98.21-1.51.34-1.86.18-.47.4-.8.75-1.15.35-.35.68-.57 1.15-.75.35-.13.88-.3 1.86-.34C9.01 3.81 9.33 3.8 12 3.8zm0 3.05a5.15 5.15 0 1 0 0 10.3 5.15 5.15 0 0 0 0-10.3zm0 8.5a3.35 3.35 0 1 1 0-6.7 3.35 3.35 0 0 1 0 6.7zm5.36-8.7a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/></svg>
+            @suaperfumaria
+          </a>
+        </li>
+      </ul>
     </div>
-  </section>
 
-  <!-- Promoções -->
-  <section class="promocoes section" id="promocoes">
-    <div class="container">
-      <h2 class="section__title">Promoções</h2>
-      <div class="promocoes__grid" id="promocoes-grid"></div>
+    <div class="footer-col">
+      <h3>Atendimento</h3>
+      <p class="footer-plain">Seg. a sáb. · 10h às 19h</p>
+      <p class="footer-plain">Retirada e entrega combinadas via WhatsApp</p>
     </div>
-  </section>
+  </div>
 
-  <!-- Catálogo -->
-  <section class="catalogo section" id="catalogo">
-    <div class="container">
-      <div class="catalogo__header">
-        <h2 class="section__title">Nossos perfumes</h2>
-        <p class="section__subtitle">Explore a coleção e entre em contato para reservar</p>
-      </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Essência Perfumaria. Todos os direitos reservados.</p>
+  </div>
+</footer>
 
-      <div class="catalogo__toolbar">
-        <div class="search-box">
-          <svg class="search-box__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-          <input type="search" id="search-input" class="search-box__input" placeholder="Buscar por nome, marca ou nota..." autocomplete="off">
-        </div>
-        <div class="filtros" id="filtros-categoria" role="group" aria-label="Filtrar por categoria"></div>
-      </div>
-
-      <div class="produtos__grid" id="produtos-grid"></div>
-      <p class="catalogo__empty hidden" id="catalogo-empty">Nenhum produto encontrado. Tente outra busca ou categoria.</p>
-    </div>
-  </section>
-
-  <!-- Sobre -->
-  <section class="sobre section" id="sobre">
-    <div class="container sobre__inner">
-      <div class="sobre__texto">
-        <h2 class="section__title">Sobre nós</h2>
-        <p data-config="loja.descricao"></p>
-        <p>Trabalhamos com marcas selecionadas e garantimos autenticidade em todos os produtos. Atendimento personalizado para ajudar você a encontrar a fragrância perfeita.</p>
-        <a href="#" class="btn btn--outline btn-instagram" data-social="instagram" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          Siga no Instagram
-        </a>
-      </div>
-      <div class="sobre__destaques">
-        <div class="destaque-card">
-          <span class="destaque-card__num">100%</span>
-          <span class="destaque-card__label">Originais</span>
-        </div>
-        <div class="destaque-card">
-          <span class="destaque-card__num">+50</span>
-          <span class="destaque-card__label">Fragrâncias</span>
-        </div>
-        <div class="destaque-card">
-          <span class="destaque-card__num">★</span>
-          <span class="destaque-card__label">Atendimento VIP</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contato -->
-  <section class="contato section" id="contato">
-    <div class="container contato__inner">
-      <div class="contato__info">
-        <h2 class="section__title">Contato</h2>
-        <ul class="contato__lista">
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <a href="#" data-contact="telefone"></a>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <a href="#" data-contact="email"></a>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span data-contact="endereco"></span>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            <span data-contact="horario"></span>
-          </li>
-        </ul>
-        <a href="#" class="btn btn--primary btn-whatsapp btn-whatsapp--large" data-action="whatsapp-geral">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.884 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Chamar no WhatsApp
-        </a>
-      </div>
-      <div class="contato__card">
-        <h3>Como funciona?</h3>
-        <ol>
-          <li>Explore o catálogo e escolha seus perfumes favoritos</li>
-          <li>Clique em <strong>Consultar</strong> no produto desejado</li>
-          <li>Envie a mensagem pelo WhatsApp — respondemos em breve!</li>
-        </ol>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <p class="footer__brand" data-config="loja.nome">Perfume Singular</p>
-      <div class="footer__links">
-        <a href="#" data-social="instagram" target="_blank" rel="noopener">Instagram</a>
-        <a href="#catalogo">Catálogo</a>
-        <a href="#contato">Contato</a>
-      </div>
-      <p class="footer__copy">&copy; <span id="ano-atual"></span> <span data-config="loja.nome">Perfume Singular</span>. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-  <!-- Modal produto -->
-  <dialog class="modal" id="modal-produto">
-    <div class="modal__content">
-      <button class="modal__close" aria-label="Fechar">&times;</button>
-      <div class="modal__body" id="modal-body"></div>
-    </div>
-  </dialog>
-
-  <!-- WhatsApp flutuante -->
-  <a href="#" class="whatsapp-float btn-whatsapp" data-action="whatsapp-geral" aria-label="WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.884 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
-
-  <script src="js/app.js" type="module"></script>
+<script src="script.js"></script>
 </body>
 </html>
